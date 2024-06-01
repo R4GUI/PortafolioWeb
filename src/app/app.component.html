@@ -1,11 +1,25 @@
-<app-inicio></app-inicio>
-
-<div class="text-center mt-4">
-
-  <button class="btn btn-secondary mr-3" routerLink="/sabermas">Saber Más</button>
-  <button class="btn btn-info mr-3" routerLink="/proyectorecientes">Trabajos</button>
-  <button class="btn btn-warning mr-3" routerLink="/trabajarconmigo">¿Por qué trabajar conmigo?</button>
-  <button class="btn btn-success" routerLink="/contacto">Contacto</button>
-</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" >
+      <app-inicio></app-inicio>
+    </a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/sabermas">Saber Más</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/proyectorecientes">Trabajos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/trabajarconmigo">¿Por qué trabajar conmigo?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <router-outlet></router-outlet>
